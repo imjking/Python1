@@ -1,0 +1,24 @@
+import turtle
+from turtle import *
+#绘制正三角形
+begin_fill()
+turtle.pensize(10) #画笔粗度
+turtle.color('red')
+turtle.circle(40,steps = 3) #边长= 40；边数= 3
+end_fill()
+
+
+#绘制正六边形（内部填充型）
+begin_fill()
+turtle.goto(100,-50)  # 换一个位置，不和上边三角形冲突
+turtle.circle(40,steps = 6)
+end_fill()
+
+
+#正六边形（非填充型）
+turtle.goto(-50,100)
+turtle.circle(40,steps = 6)
+
+#正五边形
+turtle.goto(-25,95)
+turtle.circle(40,steps = 5)
