@@ -1,0 +1,17 @@
+import turtle
+>>> from turtle import *
+>>> color('red')
+>>> turtle.fd(100)
+>>> color('green')
+>>> turtle.seth(120)
+>>> turtle.fd(100)
+>>> color('blue')
+>>> turtle.seth(240)
+>>> turtle.fd(100)
+>>> 
+>>> 
+>>> #代码优化
+>>> t = turtle
+>>> for i in range(3):
+	t.fd(100)  #fd = forward向前
+	t.left(120)#左转120度
